@@ -60,6 +60,23 @@ button {
     font-size: xx-large;
     margin: 20px;
 }
+.calendarDayDiv.expanded {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.expanded .eventDiv
+
+ {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
 
 @media (max-width: 360px) {
     
@@ -97,3 +114,4 @@ button {
         margin: 0;
     }
 }
+
