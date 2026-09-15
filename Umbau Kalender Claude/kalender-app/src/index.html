@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Kalender</title>
+
+    <!--
+      Google Identity Services Bibliothek
+      Wird benötigt damit der Google-Login-Button funktioniert.
+      onload="initClient" entfällt hier – das übernimmt React in KalenderApp.jsx
+    -->
+    <script
+      src="https://accounts.google.com/gsi/client"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- React rendert hier hinein -->
+    <div id="root"></div>
+
+    <!-- Vite lädt automatisch die main.jsx -->
+    <script type="module" src="/main.jsx"></script>
+  </body>
+</html>

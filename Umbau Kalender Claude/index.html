@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Kalender Test</title>
+    <link rel="stylesheet" href="styleCalender.css">
+    <script src="datenAbrufAPI.js"></script>
+    <script src="https://accounts.google.com/gsi/client" onload="initClient()" async defer></script>
+    <script src="DatenAbrufAPI.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="calenderHeader">
+        <button onclick="handleAuthClick()">Kalender Login & Laden</button>
+            
+        <button id="prevMonth">vorheriger Monat</button>
+        <button id="nextMonth">nächster Monat</button>
+        </div>
+
+        <div id="aktuellesDatum">
+            <div id="monatAktuell"></div> <div id="jahrAktuell"></div>
+                
+        </div>
+        
+        <div class="calenderHead">
+            <div>MO</div>
+            <div>DI</div>
+            <div>MI</div>
+            <div>DO</div>
+            <div>FR</div>
+            <div>SA</div>
+            <div>SO</div>
+        </div>
+  
+    </header>
+
+    <div id='calenderBody'></div>
+
+    <script src="calenderJS.js"></script>
+    <script>
+    
+    </script>
+
+</body>
+
+</html>
